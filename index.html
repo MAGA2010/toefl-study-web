@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOEFL 学习追踪</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <nav id="sidebar">
+      <div class="logo">
+        <div class="logo-icon-wrapper">
+          <span class="logo-icon">📚</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-text">TOEFL Tracker</span>
+          <span class="logo-subtitle">学习追踪系统</span>
+        </div>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#dashboard" class="nav-item active" data-page="dashboard">
+            <span class="nav-icon">📊</span>
+            <span class="nav-label">今日概览</span>
+          </a>
+        </li>
+        <li>
+          <a href="#study-log" class="nav-item" data-page="study-log">
+            <span class="nav-icon">📝</span>
+            <span class="nav-label">学习记录</span>
+          </a>
+        </li>
+        <li>
+          <a href="#wrong-questions" class="nav-item" data-page="wrong-questions">
+            <span class="nav-icon">❌</span>
+            <span class="nav-label">错题本</span>
+          </a>
+        </li>
+        <li>
+          <a href="#plan" class="nav-item" data-page="plan">
+            <span class="nav-icon">📅</span>
+            <span class="nav-label">学习计划</span>
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar-footer">
+        <div class="sidebar-version">v1.0.0</div>
+      </div>
+    </nav>
+    <main id="main-content">
+      <div class="mobile-header">
+        <button class="hamburger">☰</button>
+        <span style="font-weight:800;font-size:18px;">TOEFL Tracker</span>
+      </div>
+      <div id="page-container"></div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
